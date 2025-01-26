@@ -1,6 +1,6 @@
 # To-Do List App
 
-A simple, interactive To-Do list app that allows users to create, delete, and search tasks. The app supports a dark/light theme, stores data locally, and provides a priority system for tasks.
+A simple, interactive To-Do list app that allows users to create, delete, and search tasks. The app supports a dark/light theme, stores data locally, and provides a priority system for tasks. [Live Demo](https://ziyad-mohsen.github.io/To-do-app-/)
 
 ## Features
 
@@ -31,7 +31,7 @@ A simple, interactive To-Do list app that allows users to create, delete, and se
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/Ziyad-Mohsen/To-do-app-
 
    ```
 
