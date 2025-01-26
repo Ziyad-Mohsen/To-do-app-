@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App ✅</title>
+    <!-- App icon -->
+    <link rel="icon" href="/favicon.svg" type="image/png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="app">
+        <header>
+          <form class="todo-form">
+            <input
+              type="text"
+              name="todo"
+              id="todo-input"
+              class="input"
+              placeholder="Add your Todo ✅"
+              maxlength="50"
+            />
+            <div class="options">
+              <div class="select-container">
+                <label for="priority">🚩</label>
+                <select name="priority" id="priority" class="select-menu">
+                  <option value="high">🔴High</option>
+                  <option value="medium">🟡Medium</option>
+                  <option value="low">🔵Low</option>
+                  <option value="none" selected>⚪None</option>
+                </select>
+              </div>
+              <button class="todo-add-btn btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </form>
+          <div class="search-form">
+            <input
+              type="search"
+              id="search-input"
+              class="input"
+              placeholder="Search To-do's 🔍"
+            />
+          </div>
+        </header>
+        <div id="todos">
+          <div class="todos-header">
+            <h1>Your To-do's📄</h1>
+            <div class="header-btns">
+              <button class="delete-all btn" data-tooltip="Delete all">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="theme-btn btn light" data-tooltip="Toggle theme">
+                <i class="fa-solid fa-moon" id="dark-icon"></i>
+                <i class="fa-solid fa-sun" id="light-icon"></i>
+              </button>
+            </div>
+          </div>
+          <div id="todos-container" class="todos-container">
+            <!-- Add todos here -->
+          </div>
+          <!-- Overflow indicator shown when overflowing To-do's -->
+          <div id="overflow-indicator" class="overflow-indicator">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
